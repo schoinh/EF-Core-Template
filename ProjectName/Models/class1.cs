@@ -6,11 +6,11 @@ namespace ProjectName.Models
     {
         public int Class1Id { get; set; }
         public string Name { get; set; }
-        public virtual ICollection<Item> Items { get; set; }
+        public virtual ICollection<Item> Class2table { get; set; }
 
         public Class1()
         {
-            this.Items = new HashSet<Item>();
+            this.Class2table = new HashSet<Item>();
         }
     }
 }
